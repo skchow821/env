@@ -9,7 +9,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/nerdtree'
 Plug 'plasticboy/vim-markdown'
-Plug 'bling/vim-airline'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 " Personal Preferences
@@ -28,6 +28,7 @@ set encoding=utf-8
 set autoindent
 set hlsearch
 set ruler
+set laststatus=2
 colorscheme torte
 
 " Set display of hidden characters.
