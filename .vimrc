@@ -10,6 +10,7 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/nerdtree'
 Plug 'plasticboy/vim-markdown'
 Plug 'itchyny/lightline.vim'
+Plug 'ntpeters/vim-better-whitespace'
 call plug#end()
 
 " Personal Preferences
@@ -54,3 +55,6 @@ function CCopy(start, end)
 	let &conceallevel = l:cl
 endfunction
 command -range=% -bar CCopy :call CCopy(<line1>, <line2>)
+
+" To conform with PEP8 line length
+autocmd FileType python setlocal colorcolumn=79
